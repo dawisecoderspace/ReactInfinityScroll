@@ -7,6 +7,7 @@ A React component to create an infinite scroll with a smooth, endless loop effec
 - Smooth transition effect when scrolling.
 - Fully customizable with different content and styles.
 - Easy integration into any React project.
+- Customizable width, height, background colors, text colors, and more.
 
 
 ## Installation
@@ -27,7 +28,7 @@ yarn add react-infinity-scroll
 Here’s a quick example of how to use the component in your React project:
 
 ```jsx
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import ReactInfinityScroll from 'react-infinity-scroll';
 
 const items = [
@@ -38,7 +39,18 @@ const items = [
 ];
 
 function App() {
-  return <ReactInfinityScroll items={items} width={360} />;
+  return (
+    <ReactInfinityScroll 
+      items={items} 
+      width={360} 
+      scrollerHeight={400}
+      cardBgColor="#888888"
+      cardNameColor="#444444"
+      cardImgSize="50%"
+      cardTextColor="#ffffff"
+      articleFontSize="13px"
+    />
+  );
 }
 
 export default App;
@@ -46,8 +58,14 @@ export default App;
 
 
 ## Props:
-- items (Array): The array of items to display in the scroller. Each item should contain a name, img, and article property.
-- width (Number): The width of each item in the scroller (defaults to 360).
+- **items** (Array): The array of items to display in the scroller. Each item should contain name, img, and article properties.
+- **width** (Number): The width of each item in the scroller (defaults to 360).
+- **scrollerHeight** (Number): The height of the scroller (defaults to 400).
+- **cardBgColor** (String): Background color for each card (defaults to #888888).
+- **cardNameColor** (String): The color of the card's name (defaults to #444444).
+- **cardImgSize** (String): The size of the card's image (defaults to 50%).
+- **cardTextColor** (String): The text color for the article in the card (defaults to #ffffff).
+- **articleFontSize** (String): The font size for the article text (defaults to 13px).
 
 
 ## Demo
@@ -71,11 +89,10 @@ If you'd like to contribute to the development of **ReactInfinityScroll**, feel 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- 
-- 
-- 
--  
+
+*** 
   
+
 # Français:
 
 ## ReactInfinityScroll
@@ -87,6 +104,7 @@ Un composant React pour créer un défilement infini avec un effet fluide et san
 - Transitions fluides lors du défilement.
 - Personnalisable avec différents contenus et styles.
 - Facile à intégrer dans n'importe quel projet React.
+- Personnalisation de la largeur, hauteur, couleurs de fond, couleurs de texte, et plus encore.
 
 
 ## Installation
@@ -104,7 +122,7 @@ yarn add react-infinity-scroll
 Voici un exemple rapide de comment utiliser le composant dans votre projet React:
 
 ```jsx
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import ReactInfinityScroll from 'react-infinity-scroll';
 
 const items = [
@@ -115,7 +133,18 @@ const items = [
 ];
 
 function App() {
-  return <ReactInfinityScroll items={items} width={360} />;
+  return (
+    <ReactInfinityScroll 
+      items={items} 
+      width={360} 
+      scrollerHeight={400}
+      cardBgColor="#888888"
+      cardNameColor="#444444"
+      cardImgSize="50%"
+      cardTextColor="#ffffff"
+      articleFontSize="13px"
+    />
+  );
 }
 
 export default App;
@@ -123,8 +152,14 @@ export default App;
 
 
 ## Props:
-- items (Array) : Le tableau d'articles à afficher dans le scroller. Chaque article doit contenir une propriété name, img, et article.
-- width (Number) : La largeur de chaque élément dans le scroller (par défaut 360).
+- **items** (Array) : Le tableau d'articles à afficher dans le scroller. Chaque article doit contenir des propriétés name, img, et article.
+- **width** (Number) : La largeur de chaque élément dans le scroller (par défaut 360).
+- **scrollerHeight** (Number) : La hauteur du scroller (par défaut 400).
+- **cardBgColor** (String) : Couleur de fond de chaque carte (par défaut #888888).
+- **cardNameColor** (String) : La couleur du nom sur la carte (par défaut #444444).
+- **cardImgSize** (String) : Taille de l'image sur la carte (par défaut 50%).
+- **cardTextColor** (String) : Couleur du texte pour l'article dans la carte (par défaut #ffffff).
+- **articleFontSize** (String) : Taille de la police du texte de l'article (par défaut 13px).
 
 
 ## Démo
