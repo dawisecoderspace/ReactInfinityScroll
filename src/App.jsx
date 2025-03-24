@@ -1,14 +1,17 @@
 import React from 'react'
 import InfinityScroll from './components/InfinityScroll'
 import './App.css'
+import img1 from '/react.svg'
+import img2 from '/vite.svg'
+import img3 from '/javascript.svg'
 
 
 
 // Sample items array for the infinity scroll
 const items = [
-  { name: 'ReactJS', img: '/react.svg', article: 'Lorem ipsum dolor sit amet consectetur adipisicint.' },
-  { name: 'Vite', img: '/vite.svg', article: 'Lorem ipsum dolor sit amet consectetur adipisicing.' },
-  { name: 'JavaScript', img: '/javascript.svg', article: 'Lorem ipsum dolor sit amet consectetur adipisicing.' }
+  { name: 'ReactJS', img: img1, article: 'Lorem ipsum dolor sit amet consectetur adipisicint.' },
+  { name: 'Vite', img: img2, article: 'Lorem ipsum dolor sit amet consectetur adipisicing.' },
+  { name: 'JavaScript', img: img3, article: 'Lorem ipsum dolor sit amet consectetur adipisicing.' }
 ]
 
 
