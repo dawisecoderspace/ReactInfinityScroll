@@ -8,7 +8,7 @@ import './InfinityScroll.css'
 function InfinityScroll({ 
   items, 
   width = 360, 
-  scrollerHeight = 400, 
+  scrollerAspectRatio = 4 / 5, 
   cardBgColor = '#888888', 
   cardNameColor = '#444444', 
   cardImgSize = '50%', 
@@ -58,7 +58,14 @@ function InfinityScroll({
     }
   }
 
+  // Handle image click and redirect to link in a new tab
+  const handleImgClick = (link) => {
+    if (link) {
+      window.open(link, '_blank'); // Open link in a new tab
+    }
+  }
 
+  
   return (
     <div className="content-scroller">
       {/* Left arrow button */}
@@ -69,7 +76,7 @@ function InfinityScroll({
         className="scroller" 
         style={{ 
           width,
-          height: `${scrollerHeight}px` 
+          aspectRatio: scrollerAspectRatio
         }} 
         ref={scrollerRef}
       >
@@ -88,12 +95,14 @@ function InfinityScroll({
             >
               {card.name}
             </h1>
-            
-            {/* Card image */}
+
+            {/* Card image with onClick */}
             <img 
               src={card.img} 
               alt="cover" 
-              style={{ width: cardImgSize }} 
+              className={card.link ? 'clickable-img' : ''} // Add class conditionally
+              style={{ width: cardImgSize, cursor: card.link ? 'pointer' : 'default' }} 
+              onClick={() => handleImgClick(card.link)} // Pass link to the handler
             />
 
             {/* Card article */}
@@ -120,7 +129,7 @@ function InfinityScroll({
 InfinityScroll.propTypes = {
   items: PropTypes.array.isRequired,
   width: PropTypes.number,
-  scrollerHeight: PropTypes.number,
+  scrollerAspectRatio: PropTypes.number,
   cardBgColor: PropTypes.string,
   cardNameColor: PropTypes.string,
   cardImgSize: PropTypes.string,
