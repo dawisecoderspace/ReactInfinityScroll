@@ -15,9 +15,9 @@ A React component to create an infinite scroll with a smooth, endless loop effec
 To install the package, use npm or yarn:
 
 ```bash
-npm install react-infinity-scroll
+npm install wise-react-infinity-scroll
 or
-yarn add react-infinity-scroll
+yarn add wise-react-infinity-scroll
 ```
 
 
@@ -29,7 +29,7 @@ Here’s a quick example of how to use the component in your React project:
 
 ```jsx
 import React from 'react';
-import ReactInfinityScroll from 'react-infinity-scroll';
+import ReactInfinityScroll from 'wise-react-infinity-scroll';
 
 const items = [
   { name: 'Item 1', img: 'img1.png', article: 'Description 1' },
@@ -111,8 +111,8 @@ Un composant React pour créer un défilement infini avec un effet fluide et san
 Pour installer le package, utilisez npm ou yarn:
 
 ```bash
-npm install react-infinity-scroll
-yarn add react-infinity-scroll
+npm install wise-react-infinity-scroll
+yarn add wise-react-infinity-scroll
 ```
 
 
@@ -123,7 +123,7 @@ Voici un exemple rapide de comment utiliser le composant dans votre projet React
 
 ```jsx
 import React from 'react';
-import ReactInfinityScroll from 'react-infinity-scroll';
+import ReactInfinityScroll from 'wise-react-infinity-scroll';
 
 const items = [
   { name: 'Article 1', img: 'img1.png', article: 'Description 1' },

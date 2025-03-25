@@ -5,8 +5,8 @@
 To install the package, use one of the following commands:
 
 ```bash
-npm install react-infinity-scroll
-yarn add react-infinity-scroll
+npm install wise-react-infinity-scroll
+yarn add wise-react-infinity-scroll
 ```
 
 
@@ -15,7 +15,7 @@ Here’s a basic example of how to use the component in your React project:
 
 ```jsx
 import React from 'react';
-import ReactInfinityScroll from 'react-infinity-scroll';
+import ReactInfinityScroll from 'wise-react-infinity-scroll';
 
 const items = [
   { name: 'Item 1', img: 'img1.png', article: 'Description 1' },
@@ -104,8 +104,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Pour installer le package, utilisez l'une des commandes suivantes :
 
 ```bash
-npm install react-infinity-scroll
-yarn add react-infinity-scroll
+npm install wise-react-infinity-scroll
+yarn add wise-react-infinity-scroll
 ```
 
 
@@ -114,7 +114,7 @@ Voici un exemple simple de comment utiliser le composant dans votre projet React
 
 ```jsx
 import React from 'react';
-import ReactInfinityScroll from 'react-infinity-scroll';
+import ReactInfinityScroll from 'wise-react-infinity-scroll';
 
 const items = [
   { name: 'Article 1', img: 'img1.png', article: 'Description 1' },
@@ -144,7 +144,7 @@ Vous pouvez personnaliser divers aspects du composant, tels que la couleur d'arr
 
 ```jsx
 import React from 'react';
-import ReactInfinityScroll from 'react-infinity-scroll';
+import ReactInfinityScroll from 'wise-react-infinity-scroll';
 
 const items = [
   { name: 'Article 1', img: 'img1.png', article: 'Description 1', link: 'https://example.com/1' },
