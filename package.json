@@ -1,6 +1,6 @@
 {
   "name": "wise-react-infinity-scroll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Un composant React pour un scroll infini facile à utiliser",
   "main": "dist/InfinityScroll.js",
   "type": "module",
@@ -14,10 +14,20 @@
     "deploy": "gh-pages -d dist",
     "prepare": "npm run build"
   },
-  "keywords": ["react", "infinity-scroll", "scroll", "npm", "vite", "wise"],
+  "keywords": [
+    "react",
+    "infinity-scroll",
+    "scroll",
+    "npm",
+    "vite",
+    "wise"
+  ],
   "author": "Ton nom ou pseudo",
   "license": "MIT",
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "dependencies": {
     "prop-types": "^15.8.1",
     "react-icons": "^5.5.0"
